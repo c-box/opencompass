@@ -18,7 +18,7 @@ class StructMMLU_V1(BaseDataset):
         for split in ['test']:
             raw_data = []
             
-            filename = osp.join(path, name, "{}_gpt-4o-mini.json".format(split))
+            filename = osp.join(path, name, "{}_v1_gpt-4o-mini.json".format(split))
             
             with open(filename, "r", encoding="utf-8") as f:
                 all_lines = json.loads(f.read())
